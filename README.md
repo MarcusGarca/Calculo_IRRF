@@ -1,6 +1,6 @@
 # Calculo_IRRF
 
-Calculadora do Imposto de Renda na Retido na Fonte de Pessoas Físicas (IRRF) remuneradas no Brasil considerando o novo cálculo do INSS.
+Calculadora do Imposto de Renda Retido na Fonte de Pessoas Físicas (IRRF) Remuneradas no Brasil. Considerando o novo cálculo do INSS.
 
 ## Acessando o Projeto
 
