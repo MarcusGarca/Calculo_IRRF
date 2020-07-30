@@ -12,8 +12,9 @@ Calculadora do Imposto de Renda (IRRF) na fonte de Pessoas Físicas remuneradas 
 
 ## MarcusGarca
 
-Aluno na Escola [Digital House](https://www.digitalhouse.com/br/) do curso Desenvolvedor Web Full Stack.
-Localização: Fortaleza-CE.
+Aluno na Escola [Digital House](https://www.digitalhouse.com/br/) do curso Desenvolvedor Web Full Stack.&nbsp;
+
+Minha Localização: Fortaleza-CE.
 
 ## Contato
 
