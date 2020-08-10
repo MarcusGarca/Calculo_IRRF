@@ -1,50 +1,117 @@
-body{
-    margin:0;
-    padding:0;
+body {
+    margin: 0;
+    padding: 0;
 }
-.container{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: large;
-}
-.topo{
-    margin: 0 auto;
-    width: 55%;
-    margin-left: center;
-    width: 615PX;
-    height: 56PX;
-    font-size: 20px;
+
+#content-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    line-height: 56px;
-    margin-top: 7px;
-    background-color:blue;
-    color: white;
-    border-radius: 5px;
-    margin-block-end: 10px;
-}    
-.centro{  
-    margin: 0 auto;
-    width: 55%
 }
-#meuDependente{
-    color:red;
+
+#content-top p {
+    max-width: 700px;
+    text-align: center;
+    background: blue;
+    color: white !important;
+    margin: .5rem .5rem .5rem;
+    border-radius: .2rem;
+    font-size: 2rem;
 }
-#previdencia{
+
+#content-middle {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+#content-middle .quest {
+    text-align: center;
+    margin: .5rem .5rem .5rem;
+    font-size: 1.4rem;
+}
+
+#content-middle .quest input {
+    align-items: center;
+    margin-bottom: .5rem;
+}
+@media (min-width:700px){
+    #content-middle .quest input{
+        width: 700px;
+        margin-left: 3.8%;
+    }
+}
+@media (min-width:1024px){
+    #content-middle .quest input{
+        width: 700px;
+        margin-left: 15%;
+    }
+}
+@media
+(min-width:1200px)
+and (max-width:1600px){
+    #content-middle .quest input{
+        width: 700px;
+        margin-left: 23.5%;
+    }
+}
+
+#content-end{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#meuDependente {
+    color: red;
+}
+
+#previdencia {
     margin-top: 10px;
     margin-block-end: 10px;
     color: red;
 }
-#calculo{
-    color:white;
-    background-color: blue;
+#content-button{
+    display: flex;
+    justify-content: center;
     text-align: center;
-    border-radius: 5px;
+    margin-bottom: .5rem;
 }
-#limpar{
-    color:white;
-    background-color:rgb(0, 146, 0);
+
+#content-button #calculo {
+    color: white;
+    height: 5rem;
+    width: 10rem;
+    background-color: rgb(7, 121, 252);
     text-align: center;
-    border-radius: 5px;
+    border: .05rem solid blue;
+    border-radius: .3rem;
+    margin-left: .8rem;
+    margin-right: .8rem;
+   
 }
-#tributo{
+
+#content-button #limpa {
+    color: white;
+    height: 5rem;
+    width: 10rem;
+    background-color: rgb(97, 221, 97);
+    text-align: center;
+    border:0.05rem solid green;
+    border-radius: .3rem;
+    margin-right: .8rem;
+}
+
+#content-button #calculo:hover{
+    background: rgb(40, 140, 255);
+}
+#content-button #limpa:hover{
+    background: rgb(96, 255, 96);
+}
+#tributo {
     font-size: x-large;
+    text-align: center;
 }

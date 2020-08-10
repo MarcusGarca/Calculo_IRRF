@@ -1,60 +1,85 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css"/>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
 
-    <title >Simulador Imposto de Renda Pessoa Física</title>
-  </head>
-  <body>
+<title>Simulador Imposto de Renda Pessoa Física</title>
+</head>
 
-    <div class="container">
+<body>
 
-      <div class="topo">   
-    <p id="titulo"> Imposto de Renda Pessoa Física - Renda Mensal Brasil</p>
-      </div> 
+  <section id="content-top">
+    <div class="item">
+      <p>Imposto de Renda Pessoa Física - Renda Mensal Brasil</p>
+    </div>
+  </section>
+  <form>
+    <section id="content-middle">
+      <div class="quest">
+        <label>Informe seu rendimento bruto</label>
+        <input class="form-control" type="text"id="renda" placeholder="R$ 0,00">
+    </div>
+      
+      <div class="custom-control custom-switch quest">
+        <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
+        <label id="previdencia" class="custom-control-label" for="customSwitch1">(INSS) - Iniciativa Privada Conforme
+          Portaria ME 914/2020</label>
+      </div>
 
-    <form>
-      <div class="centro">  
-        <label>Informe seu rendimento bruto</label> 
-        <input type="text" class="form-control" id="renda" placeholder="R$ 0,00">
-
-        <div class="custom-control custom-switch">
-          <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
-          <label id="previdencia" class="custom-control-label" for="customSwitch1">(INSS) - Iniciativa Privada Conforme Portaria ME 914/2020</label>
-        </div>
-
-        <label>Informe o número de depedentes</label>
+      <div class="quest"><label>Informe o número de depedentes</label>
         <input type="text" class="form-control" id="dependente" placeholder="No. dependentes">
         <label id="meuDependente">O valor da dedução é R$ 189,59 mensais, por dependente</label>
-  
-      <label>Informe os valores de pensão alimentícia</label>
-      <input type="text" class="form-control"  id="pensao" placeholder="R$ 0,00"><br>
+      </div>
 
-      <label>Informe outras deduções legais</label>
-      <input type="text" class="form-control"  id="outra" placeholder="R$ 0,00"><br>
-    
-    <button type="button" class="btn btn-lg btn-primary" onclick="estimativaImpostoRenda()" id="calculo">Calcular</button>
-    <button type="button" class="btn btn-success btn-lg" onclick="window.location.reload()"id ="limpa">Limpar</button><br><br>
-    <label id="tributo">O IRRF e INSS devido serão informado aqui.</label><br>
-  </div>
+      <div class="quest">
+        <label>Informe os valores de pensão alimentícia</label>
+        <input type="text" class="form-control" id="pensao" placeholder="R$ 0,00">
+      </div>
+
+      <div class="quest">
+        <label>Informe outras deduções legais</label>
+        <input type="text" class="form-control" id="outra" placeholder="R$ 0,00">
+      </div>
+
+    </section>
+
+    <section id="content-button">
+      <button type="button" class="btn btn-lg btn-primary" onclick="estimativaImpostoRenda()"
+        id="calculo">Calcular</button>
+      <button type="button" class="btn btn-success btn-lg" onclick="window.location.reload()"
+        id="limpa">Limpar</button>
+    </section>
+    <section id="content-end">
+      <label id="tributo">O IRRF e INSS devido serão informado aqui.</label><br>
+    </section>  
   </form>
-  </div>
+  
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script> 
-    <script src="script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-  </body>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
