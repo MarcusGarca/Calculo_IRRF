@@ -27,6 +27,12 @@ body {
     text-align: center;
 
 }
+.middle-inss{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 2.4rem;
+}
 
 #content-middle .quest {
     text-align: center;
@@ -66,13 +72,13 @@ and (max-width:1600px){
 }
 
 #meuDependente {
-    color: red;
+    color: rgb(230, 90, 90);
+    font-size: 1rem;
 }
 
 #previdencia {
     margin-top: 10px;
     margin-block-end: 10px;
-    color: red;
 }
 #content-button{
     display: flex;
@@ -114,4 +120,10 @@ and (max-width:1600px){
 #tributo {
     font-size: x-large;
     text-align: center;
+}
+.new-tributo {
+    font-size: x-large;
+    text-align: center;
+    background-color: rgb(154, 235, 146);
+    color: green !important;
 }
