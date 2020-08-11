@@ -100,8 +100,6 @@ function impostoRenda(){
     }     
         return vrIrpf;
     }
-
-
    
 function estimativaImpostoRenda(){
   document.getElementById("tributo").innerHTML="Valor do IRRF : "+ impostoRenda().toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}) +" Valor do INSS : "+ previdenciaSocial().toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
