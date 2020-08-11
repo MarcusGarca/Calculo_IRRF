@@ -33,14 +33,6 @@ body {
     text-align: center;
     line-height: 2.4rem;
 }
-
-.middle-inss{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    line-height: 2.4rem;
-}
-
 #content-middle .quest {
     text-align: center;
     margin: .5rem .5rem .5rem;
